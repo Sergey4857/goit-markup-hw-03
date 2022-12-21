@@ -21,17 +21,37 @@ ul{
     list-style: none;
 }
 
+ h1,h2,h3,h4,h5,h6,ul,p{
+margin-bottom: 0px;
+margin-top: 0px;;
+ }
+
 .container{
 
 width: 1128px;    
 
 margin-left: auto;
 margin-right: auto;
-
-
+background-color: blue;
 
 }
+.section{
+padding-bottom: 120px;
+padding-top: 120px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .all-header a{
 text-decoration: none;
@@ -69,8 +89,7 @@ text-transform: uppercase;
     color: var(--hover-focus-color)
 }
 .contact-link{
- margin-top: 0; 
- margin-bottom: 0;
+
 }
 
 .contact-link a{
@@ -102,8 +121,7 @@ text-align: center;
         /* or 107% */
     text-align: center;
     letter-spacing: 0.02em;
-    margin-top: 0;
-    margin-bottom: 0;
+   
    
 
 }
@@ -119,20 +137,18 @@ min-width: 170px;
 padding: 16px 32px ;
 border: 1px solid transparent;
 margin-top: 48px;
-margin-bottom: 192px;
 }
 
 .privilege{
     background-color: var(--main-background-color);
     padding-top: 120px;
     padding-bottom: 120px;
+    background-color: green;
 
 
 }
-.privilage-main-title{
-  margin-bottom: 0px;
-  margin-top: 0px;  
-}
+
+
 .container ul{
 margin-top: 0px;
 margin-bottom: 0px;
@@ -146,17 +162,16 @@ color: var(--header-color);
     line-height: 1.2;
 
     margin-bottom: 8px;
-    margin-top: 0px;
-
 }
 .privilege-text{
 color: var(--main-text-color);
-margin-bottom: 0px;
-    margin-top: 0px;
+
 }
 
 .work{
 background-color: var(--main-background-color);
+padding-top: 0px;
+background-color: violet;
 }
 
 .section-title{
@@ -168,16 +183,14 @@ font-size: 36px;
 line-height: 1.11;
 text-align: center;
 text-transform: capitalize;
-margin-top: 0px;
 margin-bottom: 72px;
 }
-
-
 
 
 .team{
 background-color: var(--secondary-background-color)
  ;
+ background-color: coral;
 }
 
 .team-name {
@@ -191,8 +204,7 @@ margin-bottom: 8px;
 }
 .team-text{
 
-margin-top: 0px;
-margin-bottom: 0px;  
+ 
 }
 
 .team-block{
@@ -224,12 +236,15 @@ text-decoration: none;
 .footer-text{
 
 color: #E7E9FC; 
-margin-bottom: 0px;
 margin-top: 16px;
 }
 
-
 /* Portfolio */
+.section-list{
+padding-top: 96px;
+background-color: yellow;
+}
+
 
 .main-portfolio{
 background-color:var(--main-background-color)
@@ -255,7 +270,14 @@ cursor: pointer;
 color: var(--hover-focus-color);
 
 }
+.button-entrance{
+margin-bottom: 72px;
+}
 
+
+.project{
+
+}
 /* Примеры работ  */
 .project a{
 text-decoration: none;
@@ -265,7 +287,7 @@ text-decoration: none;
 
 .project-block {
 background-color: var(--main-background-color);
-
+padding-bottom: 32px;
 }
 
 
@@ -274,8 +296,12 @@ color: var(--header-color);
 font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
+margin-bottom: 8px;
+margin-top: 32px;
     
 } 
 .project-text{
-color: var(--main-text-color);    
+color: var(--main-text-color);
+ 
+
 }
