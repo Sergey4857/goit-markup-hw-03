@@ -1,0 +1,219 @@
+:root{
+--header-color:#2E2F42;
+--main-text-color:#434455;
+--main-background-color:#FFFFFF;
+--secondary-background-color:#F4F4FD;
+--hover-focus-color:#4D5AE5;
+--third-background-color:#E5E5E5;
+
+}
+
+body{
+    background-color:var(--main-background-color);
+    color: var(--main-text-color); 
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;   
+    letter-spacing: 0.02em;
+
+}
+ul{
+    list-style: none;
+
+}
+
+.all-header a{
+text-decoration: none;
+
+}
+.logo{
+color:var(--header-color); 
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.logo-color{
+color:var(--hover-focus-color);
+font-family:'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.nav-link a{
+
+    color: var(--header-color);
+    font-weight: 600;
+    line-height: 1.5;
+    }
+.nav-link a:hover,
+.nav-link a:focus
+{
+
+    color: var(--hover-focus-color)
+}
+
+.contact-link a{
+
+color:var(--main-text-color);
+font-style: normal;
+
+}
+
+.contact-link a:hover,
+.contact-link a:focus
+
+{
+ color: var(--hover-focus-color);
+}
+
+
+.hero{
+background-color: var(--header-color);
+}
+.hero-title{
+    color: var(--main-background-color);
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+        /* or 107% */
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.hero-button{
+background-color:var(--hover-focus-color);
+color: var(--main-background-color);
+font-family: inherit;
+cursor: pointer;
+}
+
+.privilege{
+    background-color: var(--main-background-color)
+}
+
+.privilege-title{
+
+color: var(--header-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.privilege-text{
+color: var(--main-text-color);
+}
+
+.work{
+background-color: var(--main-background-color);
+}
+
+.section-title{
+color: var(--header-color);
+font-family: 'Roboto';
+
+font-weight: 600;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+text-transform: capitalize;
+
+}
+
+.team{
+background-color: var(--secondary-background-color)
+ ;
+}
+
+.team-name {
+
+color: var(--header-color);
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+}
+
+.team-block{
+ background-color: var(--main-background-color);
+}
+
+.footer{
+
+background-color: var(--header-color);
+}
+
+.footer a{
+
+text-decoration: none;    
+}
+
+.logo-title{
+    color: var(--secondary-background-color);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer-text{
+
+color: #E7E9FC; 
+}
+
+
+/* Portfolio */
+
+.main-portfolio{
+background-color:var(--main-background-color)
+
+}
+
+.button-porfolio{
+font-family: inherit;
+background-color: var(--secondary-background-color);
+color: var(--hover-focus-color);
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5; 
+text-align: center;
+letter-spacing: 0.04em;
+cursor: pointer;
+}
+
+
+/* Я так понял не будет работать, оставлю пока так  */
+.button-porfolio button:hover,
+.button-porfolio:focus{
+color: var(--hover-focus-color);
+
+}
+
+/* Примеры работ  */
+.project a{
+text-decoration: none;
+
+}
+
+
+.project-block {
+background-color: var(--main-background-color);
+
+}
+
+
+.project-title{
+color: var(--header-color);
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+    
+} 
+.project-text{
+color: var(--main-text-color);    
+}
