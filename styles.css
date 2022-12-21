@@ -19,8 +19,19 @@ body{
 }
 ul{
     list-style: none;
+}
+
+.container{
+
+width: 1128px;    
+
+margin-left: auto;
+margin-right: auto;
+
+
 
 }
+
 
 .all-header a{
 text-decoration: none;
@@ -57,6 +68,10 @@ text-transform: uppercase;
 
     color: var(--hover-focus-color)
 }
+.contact-link{
+ margin-top: 0; 
+ margin-bottom: 0;
+}
 
 .contact-link a{
 
@@ -75,6 +90,8 @@ font-style: normal;
 
 .hero{
 background-color: var(--header-color);
+text-align: center;
+
 }
 .hero-title{
     color: var(--main-background-color);
@@ -85,17 +102,40 @@ background-color: var(--header-color);
         /* or 107% */
     text-align: center;
     letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+
 }
 
 .hero-button{
+display: inline-block;
 background-color:var(--hover-focus-color);
 color: var(--main-background-color);
 font-family: inherit;
 cursor: pointer;
+border-radius: 4px;
+min-width: 170px;
+padding: 16px 32px ;
+border: 1px solid transparent;
+margin-top: 48px;
+margin-bottom: 192px;
 }
 
 .privilege{
-    background-color: var(--main-background-color)
+    background-color: var(--main-background-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+
+}
+.privilage-main-title{
+  margin-bottom: 0px;
+  margin-top: 0px;  
+}
+.container ul{
+margin-top: 0px;
+margin-bottom: 0px;
 }
 
 .privilege-title{
@@ -104,9 +144,15 @@ color: var(--header-color);
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
+
+    margin-bottom: 8px;
+    margin-top: 0px;
+
 }
 .privilege-text{
 color: var(--main-text-color);
+margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .work{
@@ -122,8 +168,12 @@ font-size: 36px;
 line-height: 1.11;
 text-align: center;
 text-transform: capitalize;
-
+margin-top: 0px;
+margin-bottom: 72px;
 }
+
+
+
 
 .team{
 background-color: var(--secondary-background-color)
@@ -136,6 +186,13 @@ color: var(--header-color);
 font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
+margin-top: 32px;
+margin-bottom: 8px;
+}
+.team-text{
+
+margin-top: 0px;
+margin-bottom: 0px;  
 }
 
 .team-block{
@@ -145,6 +202,9 @@ line-height: 1.2;
 .footer{
 
 background-color: var(--header-color);
+padding: 100px;
+
+
 }
 
 .footer a{
@@ -164,6 +224,8 @@ text-decoration: none;
 .footer-text{
 
 color: #E7E9FC; 
+margin-bottom: 0px;
+margin-top: 16px;
 }
 
 

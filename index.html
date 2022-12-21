@@ -7,38 +7,42 @@
     <title>Web studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <!-- Шапка сайта  -->
     <header class="all-header">
-        <nav>
+        <div class="container">
+            <nav>
             <a href="./index.html" class="logo"><span class="logo-color">Web</span>studio</a>
             <ul class="nav-link">
                 <li><a href="./index.html">Studio</a></li>
-                <li><a href="./portfolio.html" >Portfolio</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
                 <li><a href="./index.html">Contacts</a></li>
             </ul>
         </nav>
         <address>
             <ul class="contact-link">
-                <li><a href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a href="tel:+11(000)111-11-11">+11(000)111-11-11</a></li>
             </ul>
         </address>
+    </div>
         </header>
 
     <main>
     <!-- Герой -->
             <section class="hero">
+              
                 <h1 class="hero-title">Effective Solutions<br>for Your Business</h1>
-                <button type="button" class="hero-button">Order Service</button> 
+                <button type="button" class="hero-button">Order Service</button>
             </section>
-    
     <!-- Преимущества -->
-        <section class="privilege">
-            <h2>Privilege</h2>
+        <section class="privilege">`
+           <div class="container">
+            <h2 class="privilage-main-title">Privilege</h2>
             <ul>
                 <li>
                     <h3 class="privilege-title">Strategy</h3>
@@ -47,13 +51,15 @@
                 </li>
                 <li>
                     <h3 class="privilege-title">Punctuality</h3>
-                    <p class="privilege-text">Bring the key message to the brand's audience for the best price within the shortest possible
+                    <p class="privilege-text">Bring the key message to the brand's audience for the best price within the shortest
+                        possible
                         time.
                     </p>
                 </li>
                 <li>
                     <h3 class="privilege-title">Diligence</h3>
-                    <p class="privilege-text">Research and confirm brands that present the strongest digital growth opportunities and minimize
+                    <p class="privilege-text">Research and confirm brands that present the strongest digital growth opportunities
+                        and minimize
                         risk.</p>
                 </li>
                 <li>
@@ -63,36 +69,37 @@
                     </p>
                 </li>
             </ul>
+           </div>
         </section>
         <!-- Примеры работ -->
         <section class="work">
-            <h2 class="section-title">What are we doing</h2>
+            <div class="container">
+                <h2 class="section-title">What are we doing</h2>
             <ul>
-        
+            
                 <li><img src="./images/about-1.jpg" alt="Frontend" width="360"></li>
                 <li><img src="./images/about-2.jpg" alt="mobile application development" width="360"></li>
                 <li><img src="./images/about-3.jpg" alt="smartphone software" width="360"></li>
-            </ul>
-        
+            </ul></div>
         </section>
             <!-- Работники -->
         <section class="team">
-          
-                <h2 class="section-title">Our team</h2>
-
+                <div class="container">
+                    <h2 class="section-title">Our team</h2>
+                
                 <ul>
-                    
+                
                     <li class="team-block">
                         <img src="./images/team-1.jpg" alt="photo Mark Guerrero" width="264">
                         <h3 class="team-name">Mark Guerrero</h3>
                         <p class="team-text">Product Designer</p>
                     </li>
-                    
+                
                     <li class="team-block">
                         <img src="./images/team-2.jpg" alt="photo Tom Ford" width="264">
                         <h3 class="team-name">Tom Ford</h3>
                         <p class="team-text">Frontend Developer</p>
-
+                
                     </li>
                     <li class="team-block">
                         <img src="./images/team-3.jpg" alt="photo Camila Garcia" width="264">
@@ -105,6 +112,8 @@
                         <p class="team-text">UI Designer</p>
                     </li>
                 </ul>
+            </div>
+                
            
         </section>
 
