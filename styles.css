@@ -7,6 +7,15 @@
   --third-background-color: #e5e5e5;
 }
 
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
 body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
@@ -18,7 +27,7 @@ body {
 ul {
   list-style: none;
   padding-left: 0px;
-
+  margin: 0;
 }
 
 h1,
@@ -27,20 +36,32 @@ h3,
 h4,
 h5,
 h6,
-ul,
 p {
-  margin-bottom: 0px;
-  margin-top: 0px;
+margin: 0;
 }
 
+a{
+text-decoration: none;
+color:inherit
+}
+
+img{
+ display: block;
+ min-width: 100%;
+ height: auto;
+}
+address{
+font-style: normal;
+}
+
+
 .container {
-  width: 1128px;
+  width: 1158px;
 
   margin-left: auto;
   margin-right: auto;
- 
+  padding: 0 15px;
 
-  ;
 }
 .section {
   padding-bottom: 120px;
@@ -49,8 +70,6 @@ p {
 
 .head-position {
   display: flex;
-  padding-bottom: 24px;
-  padding-top: 24px;
 
 }
 
@@ -73,20 +92,23 @@ flex-basis: calc((100%-72)/4);
 
 }
 
-.all-header{
+.header-position{
 
-outline: 1px solid gray;
-  
+border-bottom: 1px solid #E7E9FC; 
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 
-.all-header a {
+.header-position a {
   text-decoration: none;
 }
 
 .logo-position {
   display: flex;
-  
+  margin-right: auto;
 }
+
+
 
 .logo {
   color: var(--header-color);
@@ -110,31 +132,22 @@ outline: 1px solid gray;
   text-transform: uppercase;
 }
 
-.nav-link {
+.nav-list {
   display: flex;
-}
-.link-position{
-margin-left: 40px;
-
-
-}
-.link-position:first-child{
-margin-left: 77px;
+  gap: 40px;
+  margin-left: 77px;
 }
 
 
 
-
-
-
-.nav-link a {
+.nav-list a {
   color: var(--header-color);
 
   font-weight: 600;
   line-height: 1.5;
 }
-.nav-link a:hover,
-.nav-link a:focus {
+.nav-list a:hover,
+.nav-list a:focus {
   color: var(--hover-focus-color);
 }
 
@@ -149,10 +162,7 @@ margin-left: 77px;
 margin-left: 40px;
 }
 
-.contact-position:first-child{
 
-margin-left: 331px;
-}
 
 
 .contact-link a {
@@ -168,6 +178,14 @@ margin-left: 331px;
 .hero {
   background-color: var(--header-color);
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-position{
+
+
+
 }
 .hero-title {
   color: var(--main-background-color);
@@ -178,6 +196,10 @@ margin-left: 331px;
   /* or 107% */
   text-align: center;
   letter-spacing: 0.02em;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .hero-button {
@@ -196,24 +218,20 @@ margin-left: 331px;
 
 .privilege {
   background-color: var(--main-background-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .privilage-link{
 
 margin-left: 24px;
-width: 264px;
+
+width:calc((100% - 72px) / 4) ;
+
+
 }
 .privilage-link:first-child{
   margin-left: 0px;
 }
 
 
-
-.container ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 
 .privilege-title {
   color: var(--header-color);
@@ -292,7 +310,8 @@ padding-bottom: 32px;
 
 .footer {
   background-color: var(--header-color);
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer a {
@@ -315,14 +334,11 @@ padding-bottom: 32px;
 }
 
 /* Portfolio */
-.section-list {
+.portfolio {
   padding-top: 96px;
 }
 
-.button-margin{
 
-margin-bottom: 72px;
-}
 
 .main-portfolio {
   background-color: var(--main-background-color);
@@ -352,19 +368,18 @@ margin-bottom: 72px;
 /* Я так понял не будет работать, оставлю пока так  */
 .button-porfolio button:hover,
 .button-porfolio:focus {
-  color: var(--hover-focus-color);
+  background: var(--hover-focus-color);
+  color: var(--main-background-color);
+
 }
 .button-entrance {
   display: flex;
   justify-content: center;
-margin-bottom: 100px;
+margin-bottom: 72px;
  
 
 }
-.button-position{
 
-
-}
 .button-position + .button-position {
 margin-left: 24px;
 
@@ -373,9 +388,8 @@ margin-left: 24px;
 .project {
 display: flex;
 flex-wrap: wrap;
-margin-top: 72px;
-
-
+column-gap: 24px;
+row-gap: 48px;
 }
 /* Примеры работ  */
 .project a {
@@ -386,6 +400,7 @@ margin-top: 72px;
 
 padding-bottom: 32px;
 padding-top: 32px;
+padding-left: 16px;
 }
 
 
@@ -396,22 +411,8 @@ padding-top: 32px;
   
   border: 0.5px solid #f4f4fd;
 
-text-align: center;
+  width: calc((100% - 48px) / 3);
 
-  /* width: calc((100%-48)/3); */
-  width: 360px;
-
-  margin-right: 24px;
-
-}
-.project-block:nth-child(3n){
-
-margin-right: 0;
-}
-
-.project-block:not(:nth-last-child(-n+3)){
-
-margin-bottom: 48px;
 }
 
 
