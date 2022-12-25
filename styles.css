@@ -68,7 +68,7 @@ font-style: normal;
   padding-top: 120px;
 }
 
-.head-position {
+.header-content {
   display: flex;
 
 }
@@ -86,31 +86,31 @@ font-style: normal;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.privilage-position{
+.privilage-list{
 display: flex;
 flex-basis: calc((100%-72)/4);
 
 }
 
-.header-position{
+.header{
 
 border-bottom: 1px solid #E7E9FC; 
   padding-bottom: 24px;
   padding-top: 24px;
 }
 
-.header-position a {
+.header a {
   text-decoration: none;
 }
 
-.logo-position {
+.nav {
   display: flex;
   margin-right: auto;
 }
 
 
 
-.logo {
+.logo-link {
   color: var(--header-color);
 
   font-family: "Raleway";
@@ -151,27 +151,25 @@ border-bottom: 1px solid #E7E9FC;
   color: var(--hover-focus-color);
 }
 
-.contact-link {
+.contact-list {
   display: flex;
   /* margin-left: auto; */
 
  
 }
-.contact-position + .contact-position{
+.contact-item + .contact-item{
   
 margin-left: 40px;
 }
 
 
-
-
-.contact-link a {
+.contact-list a {
   color: var(--main-text-color);
   font-style: normal;
 }
 
-.contact-link a:hover,
-.contact-link a:focus {
+.contact-list a:hover,
+.contact-list a:focus {
   color: var(--hover-focus-color);
 }
 
@@ -219,7 +217,7 @@ margin-left: 40px;
 .privilege {
   background-color: var(--main-background-color);
 }
-.privilage-link{
+.privilage-item{
 
 margin-left: 24px;
 
@@ -227,7 +225,7 @@ width:calc((100% - 72px) / 4) ;
 
 
 }
-.privilage-link:first-child{
+.privilage-item:first-child{
   margin-left: 0px;
 }
 
@@ -249,7 +247,7 @@ width:calc((100% - 72px) / 4) ;
   background-color: var(--main-background-color);
   padding-top: 0px;
 }
-.work-position{
+.work-list{
 display: flex;
 
 }
@@ -280,7 +278,7 @@ margin-left: 24px;
   background-color: var(--secondary-background-color);
 }
 
-.team-position{
+.team-list{
 
 display: flex;
 }
@@ -294,12 +292,12 @@ display: flex;
 }
 
 
-.team-block {
+.team-item {
   background-color: var(--main-background-color);
   text-align: center;
 }
 
-.team-block:not(:first-child){
+.team-item:not(:first-child){
 margin-left: 24px;
 }
 
@@ -372,7 +370,7 @@ padding-bottom: 32px;
   color: var(--main-background-color);
 
 }
-.button-entrance {
+.button-list {
   display: flex;
   justify-content: center;
 margin-bottom: 72px;
@@ -380,12 +378,12 @@ margin-bottom: 72px;
 
 }
 
-.button-position + .button-position {
+.button-item + .button-item {
 margin-left: 24px;
 
 }
 
-.project {
+.project-list {
 display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
@@ -404,7 +402,7 @@ padding-left: 16px;
 }
 
 
-.project-block {
+.project-item {
 
 
   background-color: var(--main-background-color);
@@ -429,7 +427,7 @@ padding-left: 16px;
 
 }
 
-.footer-position{
+.footer-content{
 
 width: 264px;
 
